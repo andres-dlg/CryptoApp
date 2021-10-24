@@ -1,4 +1,9 @@
 package com.dlgsoft.cryptoapp.presentation.coin_list
 
-class CoinListState {
-}
+import com.dlgsoft.cryptoapp.domain.model.Coin
+
+data class CoinListState(
+    val isLoading: Boolean = false,
+    val coins: List<Coin> = emptyList(),
+    val error: String = ""
+)

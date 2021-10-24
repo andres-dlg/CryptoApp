@@ -1,9 +1,12 @@
 package com.dlgsoft.cryptoapp.common
 
 object Constants {
-    const val baseUrl = "https://api.coinpaprika.com/"
+    const val BASE_URL = "https://api.coinpaprika.com/"
+
+    // Params
+    const val PARAM_COIN_ID = "coinId"
 
     // Error messages
-    const val errorUnexpectedOccurred = "An unexpected error occurred."
-    const val errorCouldNotReachServer = "Couldn't reach server."
+    const val ERROR_UNEXPECTED = "An unexpected error occurred."
+    const val ERROR_COULD_NOT_REACH_SERVER = "Couldn't reach server."
 }

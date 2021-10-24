@@ -1,6 +1,6 @@
 package com.dlgsoft.cryptoapp.data.di
 
-import com.dlgsoft.cryptoapp.common.Constants.baseUrl
+import com.dlgsoft.cryptoapp.common.Constants.BASE_URL
 import com.dlgsoft.cryptoapp.data.remote.CoinPaprikaApi
 import com.dlgsoft.cryptoapp.data.repository.CoinRepositoryImpl
 import com.dlgsoft.cryptoapp.domain.repository.CoinRepository
@@ -19,7 +19,7 @@ object AppModule {
     @Provides
     @Singleton
     fun providePaprikaApi(): CoinPaprikaApi = Retrofit.Builder()
-        .baseUrl(baseUrl)
+        .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
         .create(CoinPaprikaApi::class.java)
