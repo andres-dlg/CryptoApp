@@ -1,4 +1,4 @@
-package com.dlgsoft.cryptoapp.presentation.coin_list.components
+package com.dlgsoft.cryptoapp.presentation.coin_list
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.dlgsoft.cryptoapp.presentation.Screen
-import com.dlgsoft.cryptoapp.presentation.coin_list.CoinListViewModel
+import com.dlgsoft.cryptoapp.presentation.coin_list.components.CoinListItem
 
 @Composable
 fun CoinListScreen(
